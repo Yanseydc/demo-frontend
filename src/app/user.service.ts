@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class UserService {
-  private apiServerUrl = `${environment.apiBaseUrl}/api/v1/users`;
+  private apiServerUrl = `https://demo-spring-api.herokuapp.com/api/v1/users`;
 
   constructor(private http: HttpClient) { }
 
