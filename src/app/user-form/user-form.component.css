@@ -1,0 +1,18 @@
+.userform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+form {    
+    text-align: center; 
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}

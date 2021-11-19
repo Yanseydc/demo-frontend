@@ -1,0 +1,25 @@
+
+<div class="userform">    
+    <div class="title">
+        <h1>{{title}}</h1>
+        <hr>
+    </div>
+    <form #userForm="ngForm" (ngSubmit)="userFormSubmit(userForm)" ngNativeValidate>    
+        <div class="form-control">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" ngModel name="firstName" ngModel="{{editUser.firstName}}"required />
+        </div>
+
+        <div class="form-control">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" ngModel name="lastName" ngModel="{{editUser.lastName}}" required />
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input id="email" type="email" ngModel name="email" ngModel="{{editUser.email}}" required/>
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>
