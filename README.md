@@ -1,27 +1,30 @@
 # Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+This project was created with angular, it's a simple crud with a form to creat and user.
+A table to show the registered users, and two actions update and delete.
 
-## Development server
+This is hosted in vercel this is a cloud platform for static pages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is the url to ahve access: https://demo-frontend-at34fflxf-yanseydc.vercel.app/users.
 
-## Code scaffolding
+#Development
+I just simply added two components to create and list registers stored in mongodb and and API hosted in heroku
+this is the list of endpoints created in the api
+POST: https://demo-spring-api.herokuapp.com/api/v1/users
+GET: https://demo-spring-api.herokuapp.com/api/v1/users
+PUT: https://demo-spring-api.herokuapp.com/api/v1/users
+DELETE: https://demo-spring-api.herokuapp.com/api/v1/users/objectId
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+body example for post and put request: 
+{
+    "firstName": "Denis",
+    "lastName": "DC",
+    "email": "denis@gmail.com"
+}
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#DATABASE
+Database is hosted in mongodb ATLAS, it's a free cloud service to store your data.
+![image](https://user-images.githubusercontent.com/45616244/142591459-376dacfd-01d6-4b38-8895-afc7c3e60903.png)
+This is the example that you will find in the vercel app.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
